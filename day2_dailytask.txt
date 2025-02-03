@@ -1,0 +1,88 @@
+next():
+====
+      i) String type 
+      ii) It reads input until it encounters a whitespaces(space,newline,tab)
+      iii) This means it will only capture one "word" or token at a time,and it will not include spaces
+      iv) Used for reading words or strings
+
+Example:
+=======
+import java.util.Scanner;
+public class ScannerNextExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a word: ");
+        String word = scanner.next();
+        System.out.println("You entered: " + word);
+        scanner.close();
+    }
+}
+
+nextLine():
+==========
+	i)The nextLine() method in Java is used to read a line of text from the
+ user input via the Scanner class.
+	ii) It reads the entire line of input, including spaces, until the user
+ presses the "Enter" key.
+	iii) It is particularly useful when you need to read full sentences or 
+multi-word inputs.
+
+Example:
+import java.util.Scanner;
+public class Example {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a line of text");
+                String input = scanner.nextLine();
+                System.out.println("You entered: " + input);
+        scanner.close();
+    }
+}
+
+nextFloat()
+========
+	i) nextFloat() reads the next token in the input and converts it into a float type value
+	ii)nextFloat() expects that the user will input a valid floating( like non-numeric value),
+	it will thrown an (InputMismatchException)
+
+Example
+=======
+import java.util.Scanner;
+public class ScannerNextFloatExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a floating-point number: ");
+        float number = scanner.nextFloat();
+        System.out.println("You entered: " + number);
+        scanner.close();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
