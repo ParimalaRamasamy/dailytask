@@ -1,18 +1,13 @@
-import java.util.Scanner;
-
+import java.util.Scanner;
 public class LargestNumber {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        // Input three numbers
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the first number:");
         int num1 = scanner.nextInt();
         System.out.println("Enter the second number:");
         int num2 = scanner.nextInt();
         System.out.println("Enter the third number:");
-        int num3 = scanner.nextInt();
-
-        // Find the largest number
+        int num3 = scanner.nextInt();
         int largest;
         if (num1 >= num2 && num1 >= num3) {
             largest = num1;
@@ -20,9 +15,7 @@ public class LargestNumber {
             largest = num2;
         } else {
             largest = num3;
-        }
-
-        // Output the largest number
+        }
         System.out.println("The largest number is: " + largest);
 
         scanner.close();
