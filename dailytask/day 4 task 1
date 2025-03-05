@@ -1,0 +1,18 @@
+class Company {
+    private static String companyName = "TechCorp";
+    private String employeeName;
+    public Company(String employeeName) {
+        this.employeeName = employeeName;
+    }
+    public void displayDetails() {
+        System.out.println("Company: " + companyName + ", Employee: " + employeeName);
+    }
+    public static void main(String[] args) {
+        Company emp1 = new Company("Alice");
+        Company emp2 = new Company("Bob");
+        Company emp3 = new Company("Charlie");
+        emp1.displayDetails();
+        emp2.displayDetails();
+        emp3.displayDetails();
+    }
+}
