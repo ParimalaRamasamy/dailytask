@@ -1,0 +1,21 @@
+class Book {
+    private String title;
+    private String author;
+    public Book() {
+        this.title = "Unknown Title";
+        this.author = "Unknown Author";
+    }
+    public Book(String title, String author) {
+        this.title = title;
+        this.author = author;
+    }
+    public void displayDetails() {
+        System.out.println("Title: " + title + ", Author: " + author);
+    }
+    public static void main(String[] args) {
+        Book defaultBook = new Book();
+        Book customBook = new Book("1984", "George Orwell");
+        defaultBook.displayDetails();
+        customBook.displayDetails();
+    }
+}
